@@ -28,7 +28,7 @@ const Header = () => {
 
         <div
           id="burgerMenu"
-          className="absolute top-0 left-0 w-full py-14 bg-primaryColor border-b 
+          className="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b 
           border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
         >
           <ul className="flex flex-col text-center gap-5 md:flex-row">
