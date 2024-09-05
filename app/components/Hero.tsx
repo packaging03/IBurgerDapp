@@ -10,7 +10,7 @@ const Hero = () => {
           <Image
             className="w-60 md:w-full"
             src={homeImage}
-            alt="Burger Logo"
+            alt="Hero Logo"
             priority
           />
         </div>
