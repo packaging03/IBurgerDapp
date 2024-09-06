@@ -5,6 +5,7 @@ import Category from "./components/Category";
 import Promo from "./components/Promo";
 import About from "./components/About";
 import Menu from "./components/Menu";
+import Review from "./components/Review";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Category />
       <Promo />
       <About />
-      <Menu/>
+      <Menu />
+      <Review />
     </>
   );
 }
