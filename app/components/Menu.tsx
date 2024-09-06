@@ -1,5 +1,11 @@
 "use client";
 import React from "react";
+import burger1 from "../assets/img/burger-1.png";
+import burger2 from "../assets/img/burger-2.png";
+import burger3 from "../assets/img/burger-3.png";
+import burger4 from "../assets/img/burger-4.png";
+import burger5 from "../assets/img/burger-5.png";
+import Image from "next/image";
 
 const Menu = () => {
   const processActiveMenu = (element: string) => {
@@ -71,6 +77,143 @@ const Menu = () => {
               </li>
             </ul>
           </div>
+        </div>
+
+        <div>
+          <ul className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+            {/* food */}
+            <li>
+              <div
+                className="h-56 grid place-items-center 
+              bg-primaryColorLight rounded-3xl 
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              >
+                <Image
+                  className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
+                  src={burger1}
+                  alt="Food Image"
+                  priority
+                />
+              </div>
+
+              <div className="pt-5">
+                <div className="mb-2">
+                  <h4 className="card__title">Regular beef burger</h4>
+                  <p className="paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+
+                <p className="text-secondaryColor">$35.00</p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                className="h-56 grid place-items-center 
+              bg-primaryColorLight rounded-3xl 
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              >
+                <Image
+                  className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
+                  src={burger2}
+                  alt="Food Image"
+                  priority
+                />
+              </div>
+
+              <div className="pt-5">
+                <div className="mb-2">
+                  <h4 className="card__title">Regular beef burger</h4>
+                  <p className="paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+
+                <p className="text-secondaryColor">$25.00</p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                className="h-56 grid place-items-center 
+              bg-primaryColorLight rounded-3xl 
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              >
+                <Image
+                  className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
+                  src={burger1}
+                  alt="Food Image"
+                  priority
+                />
+              </div>
+
+              <div className="pt-5">
+                <div className="mb-2">
+                  <h4 className="card__title">Regular beef burger</h4>
+                  <p className="paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+
+                <p className="text-secondaryColor">$30.00</p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                className="h-56 grid place-items-center 
+              bg-primaryColorLight rounded-3xl 
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              >
+                <Image
+                  className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
+                  src={burger1}
+                  alt="Food Image"
+                  priority
+                />
+              </div>
+
+              <div className="pt-5">
+                <div className="mb-2">
+                  <h4 className="card__title">Regular beef burger</h4>
+                  <p className="paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+
+                <p className="text-secondaryColor">$24.00</p>
+              </div>
+            </li>
+
+            <li>
+              <div
+                className="h-56 grid place-items-center 
+              bg-primaryColorLight rounded-3xl 
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              >
+                <Image
+                  className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
+                  src={burger1}
+                  alt="Food Image"
+                  priority
+                />
+              </div>
+
+              <div className="pt-5">
+                <div className="mb-2">
+                  <h4 className="card__title">Regular beef burger</h4>
+                  <p className="paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing
+                  </p>
+                </div>
+
+                <p className="text-secondaryColor">$42.00</p>
+              </div>
+            </li>
+
+            
+          </ul>
         </div>
       </div>
     </section>
