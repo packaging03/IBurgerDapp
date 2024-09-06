@@ -23,7 +23,7 @@ const Contact = () => {
             href=""
             className="flex items-center justify-center gap-2 btn bg-blackColor hover:opacity-75"
           >
-            <i className="fa fa-paper-plane"></i>
+            <i className="fa-solid fa-paper-plane"></i>
             Subscribe
           </a>
         </div>

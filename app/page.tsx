@@ -7,6 +7,7 @@ import About from "./components/About";
 import Menu from "./components/Menu";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       <About />
       <Menu />
       <Review />
-      <Contact/>
+      <Contact />
+      <Footer />
     </>
   );
 }
