@@ -118,13 +118,6 @@ const Menu = () => {
               >
                 Beverage
               </li>
-              {/* <li
-                id="li_drinks"
-                className="btn bg-primaryColorLight"
-                onClick={(e) => processActiveMenu("li_drinks")}
-              >
-                Drinks
-              </li> */}
             </ul>
           </div>
         </div>
