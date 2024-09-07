@@ -19,7 +19,6 @@ import beverage5 from "../assets/img/beverage-5.png";
 import Image from "next/image";
 
 const Menu = () => {
-
   const processActiveMenu = (element: string) => {
     const all_items = document.querySelectorAll(".item_wrap");
     const foods = document.querySelectorAll(".food");
@@ -37,14 +36,12 @@ const Menu = () => {
 
         item.classList.add("active");
         const tadval = item.getAttribute("data-tabs");
-        console.log(tadval);
-        
+
         all_items.forEach((item) => {
           item.classList.add("hidden");
         });
 
         if (tadval == "food") {
-          console.log(foods);
           foods.forEach((item) => {
             item.classList.remove("hidden");
             item.classList.add("block");
@@ -89,7 +86,7 @@ const Menu = () => {
               <li
                 id="li_all"
                 data-tabs="all"
-                className="btn bg-primaryColorLight active"
+                className="btn bg-primaryColorLight active dark:bg-darkColorLight"
                 onClick={(e) => processActiveMenu("li_all")}
               >
                 All
@@ -97,7 +94,7 @@ const Menu = () => {
               <li
                 id="li_food"
                 data-tabs="food"
-                className="btn bg-primaryColorLight"
+                className="btn bg-primaryColorLight dark:bg-darkColorLight"
                 onClick={(e) => processActiveMenu("li_food")}
               >
                 Food
@@ -105,7 +102,7 @@ const Menu = () => {
               <li
                 id="li_snack"
                 data-tabs="snack"
-                className="btn bg-primaryColorLight"
+                className="btn bg-primaryColorLight dark:bg-darkColorLight"
                 onClick={(e) => processActiveMenu("li_snack")}
               >
                 Snack
@@ -113,7 +110,7 @@ const Menu = () => {
               <li
                 id="li_beverage"
                 data-tabs="beverage"
-                className="btn bg-primaryColorLight"
+                className="btn bg-primaryColorLight dark:bg-darkColorLight"
                 onClick={(e) => processActiveMenu("li_beverage")}
               >
                 Beverage
@@ -129,7 +126,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -155,7 +152,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -181,7 +178,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -207,7 +204,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -233,7 +230,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -261,7 +258,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -287,7 +284,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -313,7 +310,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -339,7 +336,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -365,7 +362,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -391,7 +388,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -419,7 +416,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -445,7 +442,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -471,7 +468,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -497,7 +494,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -523,7 +520,7 @@ const Menu = () => {
               <div
                 className="h-56 grid place-items-center 
               bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40"
+              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"

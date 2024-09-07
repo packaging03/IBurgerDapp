@@ -10,7 +10,7 @@ const Promo = () => {
         {/* Card 1 */}
         <div
           className="bg-primaryColorLight flex flex-col p-5 rounded-lg 
-        md:flex-row md:items-center lg:flex-row-reverse lg:flex-1"
+        md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
         >
           <Image
             className="w-48 mx-auto hover:animate-movingY md:mx-5"
@@ -34,7 +34,7 @@ const Promo = () => {
         {/* Card 2 */}
         <div
           className="bg-primaryColorLight flex flex-col p-5 rounded-lg 
-        md:flex-row md:items-center lg:flex-row-reverse lg:flex-1"
+        md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
         >
           <Image
             className="w-48 mx-auto hover:animate-movingY md:mx-5"

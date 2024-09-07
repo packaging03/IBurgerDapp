@@ -19,7 +19,7 @@ const About = () => {
           <h2 className="section__title">
             Find food and drinks, all-in-one place for your best taste.
           </h2>
-          <div className="separator"></div>
+          <div className="seperator mx-auto md:mx-0"></div>
           <p className="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
             quae ipsa inventore pariatur cumque iste reprehenderit totam optio
@@ -43,7 +43,9 @@ const About = () => {
               Health Protocol
             </li>
           </ul>
-          <a href="" className="btn btn-primary">About us</a>
+          <a href="" className="btn btn-primary">
+            About us
+          </a>
         </div>
       </div>
     </section>

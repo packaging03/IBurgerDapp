@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 const Header = () => {
   const showHamburgerMenu = () => {
@@ -16,9 +16,41 @@ const Header = () => {
     }
   };
 
+  useEffect(() => {
+    if (localStorage.getItem("mode") == "dark") {
+      lightMode();
+    } else {
+      darkMode();
+    }
+  }, []);
+
+  const changeColorTheme = () => {
+    if (localStorage.getItem("mode") == "light") {
+      darkMode();
+    } else {
+      lightMode();
+    }
+  };
+
+  function darkMode() {
+    let html = document.querySelector("html");
+    let themeBtn = document.getElementById("theme-toggle");
+    if (html) html.classList.add("dark");
+    if (themeBtn) themeBtn.classList.replace("ri-moon-line", "ri-sun-line");
+    localStorage.setItem("mode", "dark");
+  }
+
+  function lightMode() {
+    let html = document.querySelector("html");
+    let themeBtn = document.getElementById("theme-toggle");
+    if (html) html.classList.remove("dark");
+    if (themeBtn) themeBtn.classList.replace("ri-sun-line", "ri-moon-line");
+    localStorage.setItem("mode", "light");
+  }
+
   return (
     <header
-      className="bg-primaryColor fixed top-0 left-0 w-full z-50"
+      className="bg-primaryColor fixed top-0 left-0 w-full z-50 dark:bg-darkColor"
       id="header"
     >
       <nav className="container relative h-14 flex justify-between items-center">
@@ -32,7 +64,7 @@ const Header = () => {
         <div
           id="burgerMenu"
           className="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b 
-          border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
+          border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto dark:bg-darkColor"
         >
           <ul className="flex flex-col text-center gap-5 md:flex-row">
             <li>
@@ -92,7 +124,11 @@ const Header = () => {
         </div>
 
         <div className="flex items-center gap-5">
-          <i className="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+          <i
+            className="ri-moon-line cursor-pointer ml-4 text-xl"
+            id="theme-toggle"
+            onClick={changeColorTheme}
+          ></i>
 
           <div id="hamburger" onClick={showHamburgerMenu} className="md:hidden">
             <i className="ri-menu-2-line cursor-pointer text-xl"></i>
