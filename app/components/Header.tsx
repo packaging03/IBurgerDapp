@@ -67,7 +67,7 @@ const Header = () => {
           border-secondaryColor md:block md:static md:p y-0 md:border-none md:w-auto md:ml-auto dark:bg-darkColor"
         >
           <ul className="flex flex-col text-center gap-5 md:flex-row">
-            <li>
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
               <a
                 href="#home"
                 className="text-secondaryColor hover:text-secondaryColor ease-in duration-200 nav__link"
@@ -76,7 +76,7 @@ const Header = () => {
                 Home
               </a>
             </li>
-            <li>
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
               <a
                 href="#about"
                 className="hover:text-secondaryColor ease-in duration-200 nav__link"
@@ -85,7 +85,7 @@ const Header = () => {
                 About Us
               </a>
             </li>
-            <li>
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
               <a
                 href="#menu"
                 className="hover:text-secondaryColor ease-in duration-200 nav__link"
@@ -94,7 +94,7 @@ const Header = () => {
                 Menu
               </a>
             </li>
-            <li>
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
               <a
                 href="#review"
                 className="hover:text-secondaryColor ease-in duration-200 nav__link"
@@ -103,7 +103,7 @@ const Header = () => {
                 Review
               </a>
             </li>
-            <li>
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
               <a
                 href="#contact"
                 className="hover:text-secondaryColor ease-in duration-200 nav__link"
@@ -112,6 +112,7 @@ const Header = () => {
                 Contact
               </a>
             </li>
+            
           </ul>
 
           <div
