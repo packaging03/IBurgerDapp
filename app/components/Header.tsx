@@ -66,7 +66,7 @@ const Header = () => {
           className="hidden absolute top-0 left-0 w-full py-4 bg-primaryColor border-b 
           border-secondaryColor md:block md:static md:p y-0 md:border-none md:w-auto md:ml-auto dark:bg-darkColor"
         >
-          <ul className="flex flex-col text-center gap-5 md:flex-row">
+          <ul className="flex flex-col text-center gap-6 md:flex-row">
             <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
               <a
                 href="#home"
@@ -112,7 +112,22 @@ const Header = () => {
                 Contact
               </a>
             </li>
-            
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
+              <a
+                href="#cart"
+                className="hover:text-secondaryColor ease-in duration-200 nav__link"
+              >
+                Cart
+              </a>
+            </li>
+            <li className="hover:bg-primaryColorLight dark:hover:bg-darkColorLight">
+              <a
+                href="#account"
+                className="hover:text-secondaryColor ease-in duration-200 nav__link"
+              >
+                Accout
+              </a>
+            </li>
           </ul>
 
           <div
@@ -134,6 +149,21 @@ const Header = () => {
           <div id="hamburger" onClick={showHamburgerMenu} className="md:hidden">
             <i className="ri-menu-2-line cursor-pointer text-xl"></i>
           </div>
+        </div>
+        <div className="flex items-center relative">
+          <a
+            title="Cart"
+            aria-label="Cart"
+            id="cart_btn"
+            href="#"
+            className="ml-4 bg-whiteColor dark:bg-secondaryColor shadow-sm inline-block px-3 py-2 rounded-full text-lg text-blackColor z-50"
+            // hover:-translate-y-1 ease-in duration-200
+          >
+            <i className="fa-solid fa-shopping-cart text-primaryColor dark:text-blackColor"></i>
+            <span className="rounded-full translate-x-2 transform absolute text-sm -bottom-1 font-oswald right-0 bg-redColor text-whiteColor w-6 h-6 flex justify-center items-center hover:-translate-y-1 ease-in duration-200">
+              3
+            </span>
+          </a>
         </div>
       </nav>
     </header>

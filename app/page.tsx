@@ -26,6 +26,7 @@ export default function Home() {
     window.addEventListener("scroll", () => {
       setActiveLinks();
     });
+    scroller();
   }, []);
 
   useEffect(() => {
@@ -88,9 +89,6 @@ export default function Home() {
     sr.reveal(".review_content", { origin: "right" });
     sr.reveal(".footer");
   };
-  useEffect(() => {
-    scroller();
-  }, []);
 
   return (
     <div>
