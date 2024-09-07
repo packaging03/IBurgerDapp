@@ -13,9 +13,11 @@ import review4 from "../assets/img/review-4.jpg";
 import review5 from "../assets/img/review-5.jpg";
 
 const Review = () => {
-
   return (
-    <section id="review" className="bg-primaryColorLight py-20">
+    <section
+      id="review"
+      className="bg-primaryColorLight py-20 dark:bg-darkColorLight"
+    >
       <div className="container">
         <div className="max-w-md mx-auto text-center">
           <h2 className="section__title">CUSTOMER REVIEW</h2>
@@ -59,7 +61,7 @@ const Review = () => {
         >
           <SwiperSlide className="py-8">
             <li className="swiper-slide">
-              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 dark:bg-darkColor">
                 <p className="paragraph">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Eaque quae assumenda officia quia molestias nobis quis veniam.
@@ -83,7 +85,7 @@ const Review = () => {
           </SwiperSlide>
           <SwiperSlide className="py-8">
             <li className="swiper-slide">
-              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 dark:bg-darkColor">
                 <p className="paragraph">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Eaque quae assumenda officia quia molestias nobis quis veniam.
@@ -107,7 +109,7 @@ const Review = () => {
           </SwiperSlide>
           <SwiperSlide className="py-8">
             <li className="swiper-slide">
-              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 dark:bg-darkColor">
                 <p className="paragraph">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Eaque quae assumenda officia quia molestias nobis quis veniam.
@@ -131,7 +133,7 @@ const Review = () => {
           </SwiperSlide>
           <SwiperSlide className="py-8">
             <li className="swiper-slide">
-              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 dark:bg-darkColor">
                 <p className="paragraph">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Eaque quae assumenda officia quia molestias nobis quis veniam.
@@ -155,7 +157,7 @@ const Review = () => {
           </SwiperSlide>
           <SwiperSlide className="py-8">
             <li className="swiper-slide">
-              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+              <div className="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 dark:bg-darkColor">
                 <p className="paragraph">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Eaque quae assumenda officia quia molestias nobis quis veniam.

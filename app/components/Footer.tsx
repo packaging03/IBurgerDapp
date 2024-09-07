@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
 const Footer = () => {
@@ -74,7 +75,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <div className="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between">
+        <div className="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between dark:border-darkColorLight">
           <p className="paragraph">IBurgerApp by Adeyemi Olaoye</p>
           <p className="paragraph">Copyright @ {_year}. All rights reserved</p>
         </div>
