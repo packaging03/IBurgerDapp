@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -8,10 +9,42 @@ import Menu from "./components/Menu";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollUp from "./components/ScrollUp";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [backToTop, setBackToTop] = useState<boolean>(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        setBackToTop(true);
+      } else {
+        setBackToTop(false);
+      }
+    });
+  }, []);
+
+  console.log(window.scrollY);
+
+
+  useEffect(() => {
+    const scrollUpBtn = document.getElementById("scroll-up");
+    if (backToTop) {
+      if (scrollUpBtn) {
+        scrollUpBtn.classList.remove("-bottom-1/2");
+        scrollUpBtn.classList.add("bottom-4");
+      }
+    } else {
+      if (scrollUpBtn) {
+        scrollUpBtn.classList.add("-bottom-1/2");
+        scrollUpBtn.classList.remove("bottom-4");
+      }
+    }
+  }, [backToTop]);
+
   return (
-    <>
+    <div>
       <Header />
       <Hero />
       <Category />
@@ -21,6 +54,7 @@ export default function Home() {
       <Review />
       <Contact />
       <Footer />
-    </>
+      <ScrollUp />
+    </div>
   );
 }
