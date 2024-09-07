@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 50) {
         setBackToTop(true);
       } else {
         setBackToTop(false);
@@ -25,20 +25,24 @@ export default function Home() {
     });
   }, []);
 
-  console.log(window.scrollY);
-
-
   useEffect(() => {
     const scrollUpBtn = document.getElementById("scroll-up");
+    const headerNavBar = document.getElementById("header");
     if (backToTop) {
       if (scrollUpBtn) {
         scrollUpBtn.classList.remove("-bottom-1/2");
         scrollUpBtn.classList.add("bottom-4");
       }
+      if (headerNavBar) {
+        headerNavBar.classList.add("shadow-sm", "shadow-secondaryColor");
+      }
     } else {
       if (scrollUpBtn) {
         scrollUpBtn.classList.add("-bottom-1/2");
         scrollUpBtn.classList.remove("bottom-4");
+      }
+      if (headerNavBar) {
+        headerNavBar.classList.remove("shadow-sm", "shadow-secondaryColor");
       }
     }
   }, [backToTop]);

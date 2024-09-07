@@ -17,7 +17,10 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-primaryColor fixed top-0 left-0 w-full z-50">
+    <header
+      className="bg-primaryColor fixed top-0 left-0 w-full z-50"
+      id="header"
+    >
       <nav className="container relative h-14 flex justify-between items-center">
         <div>
           <a href="#" className="text-2xl uppercase font-oswald">
