@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="container flex flex-col gap-10 md:flex-row">
-        <div className="flex-1">
+        <div className="flex-1 about_img">
           <Image
             className="rounded-lg"
             src={about}
@@ -15,7 +15,7 @@ const About = () => {
           />
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1 about_content">
           <h2 className="section__title">
             Find food and drinks, all-in-one place for your best taste.
           </h2>

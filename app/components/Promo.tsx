@@ -9,7 +9,7 @@ const Promo = () => {
       <div className="container flex flex-col gap-5 lg:gap-10 lg:flex-row">
         {/* Card 1 */}
         <div
-          className="bg-primaryColorLight flex flex-col p-5 rounded-lg 
+          className="promo__card_1 bg-primaryColorLight flex flex-col p-5 rounded-lg 
         md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
         >
           <Image
@@ -33,7 +33,7 @@ const Promo = () => {
 
         {/* Card 2 */}
         <div
-          className="bg-primaryColorLight flex flex-col p-5 rounded-lg 
+          className="promo__card_2 bg-primaryColorLight flex flex-col p-5 rounded-lg 
         md:flex-row md:items-center lg:flex-row-reverse lg:flex-1 dark:bg-darkColorLight"
         >
           <Image

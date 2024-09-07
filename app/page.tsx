@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Category from "./components/Category";
@@ -11,6 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollUp from "./components/ScrollUp";
 import { useEffect, useState } from "react";
+import ScrollReveal from "scrollreveal";
 
 export default function Home() {
   const [backToTop, setBackToTop] = useState<boolean>(false);
@@ -22,6 +22,9 @@ export default function Home() {
       } else {
         setBackToTop(false);
       }
+    });
+    window.addEventListener("scroll", () => {
+      setActiveLinks();
     });
   }, []);
 
@@ -46,6 +49,48 @@ export default function Home() {
       }
     }
   }, [backToTop]);
+
+  const setActiveLinks = () => {
+    let all_sections = document.querySelectorAll("section");
+    let all_navlinks = document.querySelectorAll(".nav__link");
+    let current = "home";
+
+    all_sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      if (window.scrollY >= sectionTop - 60) {
+        current = section.getAttribute("id")!;
+      }
+    });
+
+    all_navlinks.forEach((nav) => {
+      nav.classList.remove("text-secondaryColor");
+      if (nav.href.includes(current)) {
+        nav.classList.add("text-secondaryColor");
+      }
+    });
+  };
+
+  const scroller = () => {
+    let sr = ScrollReveal({
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+    });
+    sr.reveal(".home__image");
+    sr.reveal(".home__content", { origin: "bottom" });
+    sr.reveal(".category_card", { interval: 300 });
+    sr.reveal(".promo__card_1", { origin: "left" });
+    sr.reveal(".promo__card_2", { origin: "right" });
+    sr.reveal(".about_img", { origin: "bottom" });
+    sr.reveal(".about_content", { origin: "top" });
+    sr.reveal(".menu_content", { origin: "left" });
+    sr.reveal(".review_content", { origin: "right" });
+    sr.reveal(".footer");
+  };
+  useEffect(() => {
+    scroller();
+  }, []);
 
   return (
     <div>

@@ -18,7 +18,7 @@ const Review = () => {
       id="review"
       className="bg-primaryColorLight py-20 dark:bg-darkColorLight"
     >
-      <div className="container">
+      <div className="container review_content">
         <div className="max-w-md mx-auto text-center">
           <h2 className="section__title">CUSTOMER REVIEW</h2>
           <div className="seperator mx-auto"></div>
