@@ -134,9 +134,7 @@ const Menu = () => {
                   alt="Food Image"
                   priority
                 />
-                <button className="absolute translate-x-32 border-darkColor hidden translate-y-14 px-2 py-2 text-[9px] transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 font-oswald hover:text-white border-2 focus:outline-none">
-                  Add to cart
-                </button>
+                <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i>
               </div>
 
               <div className="pt-5">
