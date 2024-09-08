@@ -134,6 +134,9 @@ const Menu = () => {
                   alt="Food Image"
                   priority
                 />
+                <button className="absolute translate-x-32 border-darkColor hidden translate-y-14 px-2 py-2 text-[9px] transition ease-in duration-200 uppercase rounded-full hover:bg-gray-800 font-oswald hover:text-white border-2 focus:outline-none">
+                  Add to cart
+                </button>
               </div>
 
               <div className="pt-5">

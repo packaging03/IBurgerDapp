@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "catId": 1,
+    "name": "Regular beef burger",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing",
+    "price": 42,
+    "available": true,
+    "imgUrl": "../assets/img/burger-1.png",
+    "created": "01/09/2024",
+    "updated": "18/09/2024"
+  },
+  {
+    "id": 2,
+    "catId": 1,
+    "name": "Regular beef burger",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing",
+    "price": 42,
+    "available": true,
+    "imgUrl": "../assets/img/burger-2.png",
+    "created": "01/09/2024",
+    "updated": "18/09/2024"
+  },
+  {
+    "id": 3,
+    "catId": 2,
+    "name": "Regular beef burger",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing",
+    "price": 42,
+    "available": true,
+    "imgUrl": "../assets/img/burger-3.png",
+    "created": "01/09/2024",
+    "updated": "18/09/2024"
+  },
+  {
+    "id": 4,
+    "catId": 2,
+    "name": "Regular beef burger",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing",
+    "price": 42,
+    "available": true,
+    "imgUrl": "../assets/img/burger-4.png",
+    "created": "01/09/2024",
+    "updated": "18/09/2024"
+  },
+  {
+    "id": 5,
+    "catId": 3,
+    "name": "Regular beef burger",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing",
+    "price": 42,
+    "available": true,
+    "imgUrl": "../assets/img/burger-5.png",
+    "created": "01/09/2024",
+    "updated": "18/09/2024"
+  }
+]
