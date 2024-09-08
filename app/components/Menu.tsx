@@ -134,14 +134,14 @@ const Menu = () => {
                   alt="Food Image"
                   priority
                 />
-                {/* <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i> */}
-                <div className="p-4 flex flex-col items-center justify-center">
+                <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i>
+                {/* <div className="p-4 flex flex-col items-center justify-center absolute translate-x-28 translate-y-10rem]">
                   <div className="cursor-pointer">
-                    <button className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-teal-600 transition duration-300 ease-out border-2 border-teal-500 rounded-full shadow-md group">
-                      <span className="absolute flex text-xs items-center justify-center w-full h-full text-teal-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+                    <button className="relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-xs transition duration-300 ease-out border-2 border-white text-secondaryColor hover:bg-primaryColorLight hover:text-whiteColor rounded-full shadow-md group">
+                      <span className="absolute flex text-xs items-center justify-center w-full h-full text-whiteColor transition-all duration-300 transform group-hover:translate-x-full ease">
                         <i className="fa-solid fa-shopping-cart" />
                       </span>
-                      <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-teal-500 group-hover:translate-x-0 ease">
+                      <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-teal-500 hover:bg-primaryColorLight hover:text-whiteColor group-hover:translate-x-0 ease">
                         Add to cart
                       </span>
                       <span className="relative invisible text-xs">
@@ -149,7 +149,7 @@ const Menu = () => {
                       </span>
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               <div className="pt-5">
