@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import burger1 from "../assets/img/burger-1.png";
 import burger2 from "../assets/img/burger-2.png";
 import burger3 from "../assets/img/burger-3.png";
@@ -19,6 +19,8 @@ import beverage5 from "../assets/img/beverage-5.png";
 import Image from "next/image";
 
 const Menu = () => {
+  const [itemCount, setItemCount] = useState(0);
+
   const processActiveMenu = (element: string) => {
     const all_items = document.querySelectorAll(".item_wrap");
     const foods = document.querySelectorAll(".food");
@@ -124,9 +126,10 @@ const Menu = () => {
             {/* food */}
             <li className="item_wrap food">
               <div
-                className="h-56 grid place-items-center 
-              bg-primaryColorLight rounded-3xl 
-              hover:bg-secondaryColor ease-linear duration-200 lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
+                className="h-56 grid grid-flow-col columns-2 place-items-center
+              bg-primaryColorLight rounded-3xl cursor-pointer relative
+              hover:bg-secondaryColor ease-linear duration-200 
+              lg:h-40 dark:bg-darkColorLight dark:hover:bg-secondaryColor"
               >
                 <Image
                   className="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"
@@ -134,7 +137,27 @@ const Menu = () => {
                   alt="Food Image"
                   priority
                 />
-                <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i>
+                {!itemCount ? (
+                  <i
+                    className="ri-add-line px-1 bg-secondaryColor rounded-full text-blackColor 
+                    hover:bg-primaryColorLight hover:text-whiteColor font-oswald 
+                    hover:text-whitefocus:outline-none w-6 absolute bottom-4 right-5"
+                    onClick={() => setItemCount((prev) => prev + 1)}
+                  />
+                ) : (
+                  <div className="absolute bottom-4 right-5 flex items-center gap-3 p-1 rounded-3xl bg-whiteColor">
+                    <i
+                      className="ri-subtract-line bg-red-500 rounded-full text-xl px-1"
+                      onClick={() => setItemCount((prev) => prev - 1)}
+                    />
+                    <p className="text-blackColor">{itemCount}</p>
+                    <i
+                      className="ri-add-line bg-greenColor rounded-full text-xl px-1"
+                      onClick={() => setItemCount((prev) => prev + 1)}
+                    />
+                  </div>
+                )}
+                {/* <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i> */}
                 {/* <div className="p-4 flex flex-col items-center justify-center absolute translate-x-28 translate-y-10rem]">
                   <div className="cursor-pointer">
                     <button className="relative inline-flex items-center justify-center px-4 py-2 overflow-hidden font-xs transition duration-300 ease-out border-2 border-white text-secondaryColor hover:bg-primaryColorLight hover:text-whiteColor rounded-full shadow-md group">
@@ -176,7 +199,7 @@ const Menu = () => {
                   alt="Food Image"
                   priority
                 />
-                <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i>
+                {/* <i className="fa-solid fa-shopping-cart absolute translate-x-36  text-blackColor bg-secondaryColor translate-y-20 px-2 py-2 text-xs transition ease-in duration-200 uppercase rounded-full hover:bg-primaryColorLight hover:text-whiteColor font-oswald hover:text-whitefocus:outline-none"></i> */}
               </div>
 
               <div className="pt-5">
