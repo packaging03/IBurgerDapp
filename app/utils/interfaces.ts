@@ -2,24 +2,19 @@ export interface GlobalState {
   wallet: string | null;
   owner: string | null;
   products: ProductProp[];
-  //   questions: QuestionProp[];
-  //   question: QuestionProp | null;
-  //   addQuestionModal: string;
-  //   updateQuestionModal: string;
-  //   deleteQuestionModal: string;
-  //   addAnswerModal: string;
-  //   answers: AnswerProp[];
 }
 
 export interface ProductProp {
   id: number;
-  cid: number;
-  name: string;
+  title: string;
   description: string;
   owner: string;
+  winner: string;
+  soldout: boolean;
   deleted: boolean;
   updated: number;
   created: number;
+  prize: number;
 }
 
 export interface RootState {
