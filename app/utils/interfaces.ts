@@ -8,6 +8,7 @@ export interface ProductProp {
   id: number;
   title: string;
   description: string;
+  image: string;
   owner: string;
   winner: string;
   soldout: boolean;
