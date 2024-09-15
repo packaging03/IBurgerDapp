@@ -3,6 +3,6 @@ import globalSlices from "./globalSlices";
 
 export const store = configureStore({
   reducer: {
-    globalStates: globalSlices,
+    globalStates: globalSlices
   },
 });
