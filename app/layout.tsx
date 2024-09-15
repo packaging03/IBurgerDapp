@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import favicon from "../app/assets/img/favicon.png";
+import Providers from "./store/Providers";
 
 export const metadata: Metadata = {
   title: "IBurger App",
@@ -32,7 +33,9 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
