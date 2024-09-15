@@ -8,7 +8,4 @@ export const globalActions = {
   setOwner: (state: GlobalState, action: PayloadAction<string>) => {
     state.owner = action.payload;
   },
-  // setQuestions: (state: GlobalState, action: PayloadAction<QuestionProp[]>) => {
-  //   state.questions = action.payload;
-  // },
 };
