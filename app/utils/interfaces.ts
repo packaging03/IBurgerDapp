@@ -2,6 +2,7 @@ export interface GlobalState {
   wallet: string | null;
   owner: string | null;
   products: ProductProp[];
+  categories: CategoryProp[];
 }
 
 export interface ProductProp {
@@ -17,6 +18,12 @@ export interface ProductProp {
   created: number;
   updated: number;
   deleted: boolean;
+}
+
+export interface CategoryProp {
+  id: number;
+  name: string;
+  created: number;
 }
 
 export interface RootState {

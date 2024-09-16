@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Food",
+    "created": "01/09/2024"
+  },
+  {
+    "id": 2,
+    "name": "Drinks",
+    "created": "01/09/2024"
+  },
+  {
+    "id": 3,
+    "name": "Snacks",
+    "created": "01/09/2024"
+  },
+  {
+    "id": 4,
+    "name": "Berbecue",
+    "created": "01/09/2024"
+  }
+]
