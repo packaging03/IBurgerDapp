@@ -6,16 +6,17 @@ export interface GlobalState {
 
 export interface ProductProp {
   id: number;
+  catId: number;
   title: string;
   description: string;
+  price: number;
   image: string;
+  available: boolean;
   owner: string;
-  winner: string;
-  soldout: boolean;
-  deleted: boolean;
-  updated: number;
+  imgUrl: string;
   created: number;
-  prize: number;
+  updated: number;
+  deleted: boolean;
 }
 
 export interface RootState {
