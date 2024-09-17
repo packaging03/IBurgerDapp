@@ -14,7 +14,6 @@ export interface ProductProp {
   image: string;
   available: boolean;
   owner: string;
-  imgUrl: string;
   created: number;
   updated: number;
   deleted: boolean;
